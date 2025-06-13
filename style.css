@@ -290,3 +290,39 @@ nav a:hover {
 .btn:hover {
   background-color: #CD7F32;
 }
+
+/* ===== Testimonials Section ===== */
+.testimonials {
+  background-color: #FFFFF0;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2.5rem;
+  color: #7B1E3C;
+  margin-bottom: 30px;
+}
+
+.testimonial {
+  background-color: #FAF5E9;
+  border-left: 6px solid #E4572E;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testimonial p {
+  font-size: 1.2rem;
+  color: #5C4033;
+  margin-bottom: 10px;
+}
+
+.testimonial h4 {
+  font-size: 1rem;
+  color: #8A8F23;
+  font-style: italic;
+}
