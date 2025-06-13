@@ -156,3 +156,23 @@ nav a:hover {
 .menu-item p {
   color: #333;
 }
+
+.about {
+  padding: 60px 20px;
+  background-color: #FAF5E9;
+  color: #5C4033;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.2em;
+  margin-bottom: 20px;
+  color: #7B1E3C;
+}
+
+.about p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 15px;
+}
