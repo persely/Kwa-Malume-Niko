@@ -197,3 +197,53 @@ nav a:hover {
   max-width: 800px;
   margin: 0 auto;
 }
+
+/* ===== Contact Section Styles ===== */
+.contact {
+  background-color: #FAF5E9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  color: #7B1E3C;
+  margin-bottom: 10px;
+}
+
+.contact p {
+  font-size: 1.1rem;
+  color: #5C4033;
+  margin-bottom: 30px;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.contact button {
+  padding: 12px;
+  background-color: #E4572E;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact button:hover {
+  background-color: #CD7F32;
+}
