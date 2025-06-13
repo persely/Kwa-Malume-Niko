@@ -63,3 +63,24 @@ h1, h2, h3 {
     padding: 14px;
   }
 }
+
+/* --- Navbar Styles --- */
+nav {
+  background-color: #5C4033; /* Cocoa brown */
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  color: #FFFFF0; /* Ivory white */
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #D4AF37; /* Royal Gold hover */
+  text-decoration: underline;
+}
