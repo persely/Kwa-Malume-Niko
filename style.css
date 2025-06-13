@@ -176,3 +176,24 @@ nav a:hover {
   max-width: 800px;
   margin: 0 auto 15px;
 }
+
+/* ===== About Section Styles ===== */
+.about {
+  background-color: #FAF5E9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  color: #7B1E3C;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1.2rem;
+  color: #5C4033;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+}
