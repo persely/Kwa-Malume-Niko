@@ -39,3 +39,29 @@ nav a {
 
 h1, h2, h3 {
   color: #7
+/* --- Mobile Responsive Styles --- */
+@media (max-width: 768px) {
+  nav a {
+    display: block;
+    margin: 10px 0;
+    padding: 12px;
+    font-size: 18px;
+  }
+
+  header h1 {
+    font-size: 26px;
+  }
+
+  main, form {
+    padding: 15px;
+  }
+
+  input, textarea {
+    font-size: 16px;
+  }
+
+  button {
+    width: 100%;
+    padding: 14px;
+  }
+}
