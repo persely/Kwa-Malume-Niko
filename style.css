@@ -116,3 +116,43 @@ nav a:hover {
   border-radius: 5px;
   font-weight: bold;
 }
+
+.menu {
+  padding: 60px 20px;
+  background-color: #FAF5E9;
+  text-align: center;
+}
+
+.menu h2 {
+  color: #7B1E3C;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.menu-item {
+  background-color: #FFFFF0;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.menu-item img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.menu-item h3 {
+  color: #5C4033;
+  margin-top: 15px;
+}
+
+.menu-item p {
+  color: #333;
+}
