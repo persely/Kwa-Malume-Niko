@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order Now - Kwa Malume Nico</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Order Now 🍽️</h1>
+    <p>Your favourite meal is a few clicks away</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="contact.html">Contact</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="about.html">About</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="order.html">Order Now</a>
+  </nav>
+
+  <main>
+    <form action="https://formspree.io/f/yourformID" method="POST">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="contact">Phone or Email:</label>
+      <input type="text" id="contact" name="contact" required />
+
+      <label for="order">What Would You Like to Order?</label>
+      <textarea id="order" name="order" rows="5" placeholder="E.g. 1 Kota Deluxe + 1 Chakalaka Sausage Roll" required></textarea>
+
+      <label for="time">Pickup or Delivery Time:</label>
+      <input type="text" id="time" name="time" placeholder="e.g. 14:00 today" />
+
+      <button type="submit">🔥 Place Order</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Kwa Malume Nico. Kasi Luxury Delivered.</p>
+  </footer>
+</body>
+</html>
