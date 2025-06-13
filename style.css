@@ -247,3 +247,46 @@ nav a:hover {
 .contact button:hover {
   background-color: #CD7F32;
 }
+
+/* ===== Hero Section ===== */
+.hero {
+  background-image: url("your-hero-image.jpg"); /* Replace with your actual image later */
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  color: #7B1E3C;
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  color: #5C4033;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #E4572E;
+  color: #fff;
+  border-radius: 8px;
+  margin-top: 15px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #CD7F32;
+}
