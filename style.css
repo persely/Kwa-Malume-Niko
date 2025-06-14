@@ -359,3 +359,37 @@ nav a:hover {
 .gallery-grid img:hover {
   transform: scale(1.05);
 }
+
+/* ===== Events Page Styles ===== */
+.events {
+  background-color: #FAF5E9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.events h2 {
+  font-size: 2.5rem;
+  color: #7B1E3C;
+  margin-bottom: 40px;
+}
+
+.event-card {
+  background-color: #FFFFF0;
+  border-left: 6px solid #E4572E;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 700px;
+  text-align: left;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.event-card h3 {
+  margin-top: 0;
+  color: #7B1E3C;
+}
+
+.event-card p {
+  color: #5C4033;
+  font-size: 1rem;
+}
