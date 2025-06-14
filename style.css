@@ -393,3 +393,56 @@ nav a:hover {
   color: #5C4033;
   font-size: 1rem;
 }
+
+/* ===== Booking Section Styles ===== */
+.booking {
+  background-color: #FAF5E9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.booking h2 {
+  font-size: 2.5rem;
+  color: #7B1E3C;
+  margin-bottom: 10px;
+}
+
+.booking p {
+  font-size: 1.1rem;
+  color: #5C4033;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.booking form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.booking input,
+.booking textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.booking button {
+  padding: 12px;
+  background-color: #E4572E;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.booking button:hover {
+  background-color: #CD7F32;
+}
