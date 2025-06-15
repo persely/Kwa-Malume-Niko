@@ -21,102 +21,85 @@ nav {
   text-align: center;
 }
 
-nav a {
-  color: #FFFFF0;
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+nav ul li {
   margin: 0 15px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.hero {
-  background-image: url('hero.jpg'); /* Replace with real hero image later */
-  background-size: cover;
-  background-position: center;
-  height: 400px;
-}
-
-h1, h2, h3 {
-  color: #7
-/* --- Mobile Responsive Styles --- */
-@media (max-width: 768px) {
-  nav a {
-    display: block;
-    margin: 10px 0;
-    padding: 12px;
-    font-size: 18px;
-  }
-
-  header h1 {
-    font-size: 26px;
-  }
-
-  main, form {
-    padding: 15px;
-  }
-
-  input, textarea {
-    font-size: 16px;
-  }
-
-  button {
-    width: 100%;
-    padding: 14px;
-  }
-}
-
-/* --- Navbar Styles --- */
-nav {
-  background-color: #5C4033; /* Cocoa brown */
-  padding: 15px;
-  text-align: center;
 }
 
 nav a {
-  color: #FFFFF0; /* Ivory white */
-  margin: 0 15px;
+  color: #FFFFF0;
   text-decoration: none;
   font-weight: bold;
   font-size: 18px;
-  transition: 0.3s;
+  transition: color 0.3s;
+  padding: 5px 8px;
 }
 
+nav a.active,
 nav a:hover {
-  color: #D4AF37; /* Royal Gold hover */
+  color: #D4AF37; /* Royal Gold hover/active */
   text-decoration: underline;
 }
 
+h1, h2, h3 {
+  color: #7B1E3C;
+}
+
+main, form {
+  padding: 15px;
+}
+
+/* Hero Section */
 .hero {
-  background-image: url('your-image.jpg');
+  background-image: url("your-hero-image.jpg"); /* Replace with your actual image */
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
   text-align: center;
-  padding: 20px;
 }
 
-.hero h1 {
+.hero-content {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.hero-content h1 {
   font-size: 3rem;
-  margin-bottom: 10px;
 }
 
-.hero p {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
+.hero-content p {
+  font-size: 1.3rem;
+  color: #5C4033;
 }
 
 .btn {
-  background-color: #D4AF37;
-  color: white;
-  padding: 12px 25px;
+  display: inline-block;
+  background-color: #E4572E;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  margin-top: 15px;
   text-decoration: none;
-  border-radius: 5px;
   font-weight: bold;
+  transition: background 0.3s ease;
 }
 
+.btn:hover {
+  background-color: #CD7F32;
+}
+
+/* Menu Section */
 .menu {
   padding: 60px 20px;
   background-color: #FAF5E9;
@@ -124,7 +107,6 @@ nav a:hover {
 }
 
 .menu h2 {
-  color: #7B1E3C;
   font-size: 2em;
   margin-bottom: 30px;
 }
@@ -157,9 +139,10 @@ nav a:hover {
   color: #333;
 }
 
+/* About Section */
 .about {
-  padding: 60px 20px;
   background-color: #FAF5E9;
+  padding: 60px 20px;
   color: #5C4033;
   text-align: center;
 }
@@ -167,7 +150,6 @@ nav a:hover {
 .about h2 {
   font-size: 2.2em;
   margin-bottom: 20px;
-  color: #7B1E3C;
 }
 
 .about p {
@@ -177,28 +159,7 @@ nav a:hover {
   margin: 0 auto 15px;
 }
 
-/* ===== About Section Styles ===== */
-.about {
-  background-color: #FAF5E9;
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.about h2 {
-  font-size: 2.5rem;
-  color: #7B1E3C;
-  margin-bottom: 20px;
-}
-
-.about p {
-  font-size: 1.2rem;
-  color: #5C4033;
-  line-height: 1.8;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-/* ===== Contact Section Styles ===== */
+/* Contact Section */
 .contact {
   background-color: #FAF5E9;
   padding: 60px 20px;
@@ -207,13 +168,11 @@ nav a:hover {
 
 .contact h2 {
   font-size: 2.5rem;
-  color: #7B1E3C;
   margin-bottom: 10px;
 }
 
 .contact p {
   font-size: 1.1rem;
-  color: #5C4033;
   margin-bottom: 30px;
 }
 
@@ -248,50 +207,7 @@ nav a:hover {
   background-color: #CD7F32;
 }
 
-/* ===== Hero Section ===== */
-.hero {
-  background-image: url("your-hero-image.jpg"); /* Replace with your actual image later */
-  background-size: cover;
-  background-position: center;
-  height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.hero-content {
-  background: rgba(255, 255, 255, 0.8);
-  padding: 30px;
-  border-radius: 12px;
-}
-
-.hero-content h1 {
-  font-size: 3rem;
-  color: #7B1E3C;
-}
-
-.hero-content p {
-  font-size: 1.3rem;
-  color: #5C4033;
-}
-
-.btn {
-  display: inline-block;
-  padding: 12px 24px;
-  background-color: #E4572E;
-  color: #fff;
-  border-radius: 8px;
-  margin-top: 15px;
-  text-decoration: none;
-  transition: background 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #CD7F32;
-}
-
-/* ===== Testimonials Section ===== */
+/* Testimonials Section */
 .testimonials {
   background-color: #FFFFF0;
   padding: 60px 20px;
@@ -300,7 +216,6 @@ nav a:hover {
 
 .testimonials h2 {
   font-size: 2.5rem;
-  color: #7B1E3C;
   margin-bottom: 30px;
 }
 
@@ -317,7 +232,6 @@ nav a:hover {
 
 .testimonial p {
   font-size: 1.2rem;
-  color: #5C4033;
   margin-bottom: 10px;
 }
 
@@ -327,7 +241,7 @@ nav a:hover {
   font-style: italic;
 }
 
-/* ===== Gallery Section ===== */
+/* Gallery Section */
 .gallery {
   background-color: #FFFFF0;
   padding: 60px 20px;
@@ -336,7 +250,6 @@ nav a:hover {
 
 .gallery h2 {
   font-size: 2.5rem;
-  color: #7B1E3C;
   margin-bottom: 30px;
 }
 
@@ -360,7 +273,7 @@ nav a:hover {
   transform: scale(1.05);
 }
 
-/* ===== Events Page Styles ===== */
+/* Events Section */
 .events {
   background-color: #FAF5E9;
   padding: 60px 20px;
@@ -369,7 +282,6 @@ nav a:hover {
 
 .events h2 {
   font-size: 2.5rem;
-  color: #7B1E3C;
   margin-bottom: 40px;
 }
 
@@ -394,7 +306,7 @@ nav a:hover {
   font-size: 1rem;
 }
 
-/* ===== Booking Section Styles ===== */
+/* Booking Section */
 .booking {
   background-color: #FAF5E9;
   padding: 60px 20px;
@@ -403,7 +315,6 @@ nav a:hover {
 
 .booking h2 {
   font-size: 2.5rem;
-  color: #7B1E3C;
   margin-bottom: 10px;
 }
 
@@ -447,7 +358,7 @@ nav a:hover {
   background-color: #CD7F32;
 }
 
-/* ===== Location / Find Us Styles ===== */
+/* Location Section */
 .location {
   background-color: #FAF5E9;
   padding: 60px 20px;
@@ -456,14 +367,7 @@ nav a:hover {
 
 .location h2 {
   font-size: 2.5rem;
-  color: #7B1E3C;
   margin-bottom: 15px;
-}
-
-.location p {
-  font-size: 1.1rem;
-  color: #5C4033;
-  margin-bottom: 20px;
 }
 
 .location-info {
@@ -487,7 +391,7 @@ nav a:hover {
   border-radius: 10px;
 }
 
-/* ===== Blog / Updates Section ===== */
+/* Blog Section */
 .blog {
   background-color: #FFFFF0;
   padding: 60px 20px;
@@ -496,13 +400,11 @@ nav a:hover {
 
 .blog h2 {
   font-size: 2.5rem;
-  color: #7B1E3C;
   margin-bottom: 10px;
 }
 
 .blog p {
   font-size: 1.1rem;
-  color: #5C4033;
   margin-bottom: 40px;
 }
 
@@ -540,35 +442,31 @@ nav a:hover {
   font-size: 0.95rem;
 }
 
-/* ===== Navigation Bar Styles ===== */
-.navbar {
-  background-color: #7B1E3C;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  font-size: 1.8rem;
-  font-weight: bold;
+/* Footer */
+footer {
+  background-color: #8A8F23;
   color: #FFFFF0;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.nav-links a {
-  color: #FAF5E9;
-  text-decoration: none;
+  padding: 20px;
+  text-align: center;
   font-size: 1rem;
-  font-weight: 500;
-  transition: color 0.3s ease;
 }
 
-.nav-links a:hover {
-  color: #E4572E;
+/* Responsive Styles */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  nav ul li {
+    margin: 8px 0;
+  }
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .gallery-grid, .blog-posts {
+    grid-template-columns: 1fr;
+  }
+  .menu-items {
+    flex-direction: column;
+  }
 }
