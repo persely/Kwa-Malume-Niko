@@ -8,40 +8,45 @@
 </head>
 <body>
   <header>
-    <h1>Order Now 🍽️</h1>
-    <p>Your favourite meal is a few clicks away</p>
+    <h1>Order Now</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="order.html" class="active">Order Now</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="location.html">Location</a></li>
+      </ul>
+    </nav>
   </header>
-
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="menu.html">Menu</a>
-    <a href="contact.html">Contact</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="about.html">About</a>
-    <a href="testimonials.html">Testimonials</a>
-    <a href="order.html">Order Now</a>
-  </nav>
-
   <main>
-    <form action="https://formspree.io/f/yourformID" method="POST">
-      <label for="name">Full Name:</label>
-      <input type="text" id="name" name="name" required />
-
-      <label for="contact">Phone or Email:</label>
-      <input type="text" id="contact" name="contact" required />
-
-      <label for="order">What Would You Like to Order?</label>
-      <textarea id="order" name="order" rows="5" placeholder="E.g. 1 Kota Deluxe + 1 Chakalaka Sausage Roll" required></textarea>
-
-      <label for="time">Pickup or Delivery Time:</label>
-      <input type="text" id="time" name="time" placeholder="e.g. 14:00 today" />
-
-      <button type="submit">🔥 Place Order</button>
-    </form>
+    <section class="order">
+      <h2>Place Your Order</h2>
+      <p>Enjoy our kasi gourmet at home! Fill in your order details below and we’ll get cooking.</p>
+      <form action="#" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+        
+        <label for="order">Your Order:</label><br>
+        <textarea id="order" name="order" rows="4" required></textarea><br><br>
+        
+        <label for="address">Delivery Address:</label><br>
+        <input type="text" id="address" name="address" required><br><br>
+        
+        <button type="submit">Place Order</button>
+      </form>
+    </section>
   </main>
-
   <footer>
-    <p>&copy; 2025 Kwa Malume Nico. Kasi Luxury Delivered.</p>
+    <p>&copy; 2025 Kwa Malume Nico. All rights reserved.</p>
   </footer>
 </body>
 </html>
