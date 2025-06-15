@@ -9,7 +9,6 @@
 <body>
   <header>
     <nav>
-      <!-- Use just one navigation bar -->
       <a href="index.html">Home</a>
       <a href="menu.html">Menu</a>
       <a href="about.html">About</a>
@@ -23,37 +22,59 @@
   </header>
   <main>
     <section class="hero">
-      <!-- Single hero section -->
-      <h1>Welcome to Kwa Malume Nico</h1>
+      <h2>Welcome to Kwa Malume Nico</h2>
       <p>Kasi Food. Luxurious Flavour. Unforgettable Experience.</p>
       <a href="menu.html" class="btn">See Our Menu</a>
     </section>
     <section id="menu" class="menu">
-      <!-- Menu section -->
       <h2>Our Signature Dishes</h2>
       <div class="menu-items">
-        <!-- Fill in with real images and dishes -->
+        <div class="menu-item">
+          <img src="images/kota-deluxe.jpg" alt="Kasi Deluxe Kota" />
+          <h3>Kasi Deluxe Kota</h3>
+          <p>Stacked with premium meat, fresh veggies &amp; secret sauces</p>
+        </div>
+        <div class="menu-item">
+          <img src="images/spicy-wings.jpg" alt="Spicy Wings Platter" />
+          <h3>Spicy Wings Platter</h3>
+          <p>Flame-grilled to perfection, served with our secret dip</p>
+        </div>
+        <!-- Add more menu items as needed -->
       </div>
     </section>
     <section id="about" class="about">
-      <!-- About section -->
       <h2>About Kwa Malume Nico</h2>
-      <p>Kwa Malume Nico is more than a food brand...</p>
+      <p>
+        Kwa Malume Nico is more than a food brand — it's a kasi luxury movement. 
+        We serve gourmet-grade kotas, spicy wings, and signature sauces crafted to bring rich South African vibes 
+        with world-class taste. Inspired by kasi streets, powered by premium quality.
+      </p>
+      <p>
+        From Tzaneen to the world, we deliver flavor that speaks heritage, hustle, and home.
+      </p>
     </section>
-    <section class="gallery">
-      <!-- Gallery section -->
+    <section id="gallery" class="gallery">
       <h2>Our Kasi Delights</h2>
       <div class="gallery-images">
-        <!-- Real images with descriptive alt tags -->
+        <img src="images/gallery1.jpg" alt="Kota Deluxe" />
+        <img src="images/gallery2.jpg" alt="Burger Beast" />
+        <img src="images/gallery3.jpg" alt="Signature Plate" />
+        <!-- Add more gallery images as needed -->
       </div>
     </section>
     <section class="contact" id="contact">
-      <!-- Single contact section with one form -->
       <h2>Contact Us</h2>
+      <p>Place your order, ask a question, or just say hello. We’ll get back to you fast!</p>
       <form>
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your Name" required>
+        
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="Your Email" required>
+        
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Your Message"></textarea>
+        
         <button type="submit">Send Message</button>
       </form>
     </section>
