@@ -7,110 +7,59 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
- <header>
+  <header>
+    <nav>
+      <!-- Use just one navigation bar -->
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="order.html">Order Now</a>
+      <a href="contact.html">Contact</a>
+    </nav>
     <h1>Kwa Malume Nico</h1>
     <p>Where Kasi Meets Luxury Dining</p>
   </header>
-
-  <nav>
-  <a href="index.html">Home</a>
-  <a href="menu.html">Menu</a>
-  <a href="about.html">About</a>
-  <a href="gallery.html">Gallery</a>
-  <a href="testimonials.html">Testimonials</a>
-  <a href="order.html">Order Now</a>
-  <a href="contact.html">Contact</a>
-</nav>
-
-  <section class="hero">
-    <div class="hero-content">
-  <h1>Welcome to Kwa Malume Nico</h1>
-  <p>Kasi Food. Luxurious Flavour. Unforgettable Experience.</p>
-  <a href="menu.html" class="btn">See Our Menu</a>
-</div>
-  </section>
-
   <main>
-    <section>
-      <h2>Welcome to Kwa Malume Nico</h2>
-      <p>Enjoy signature kasi dishes with a touch of class. From juicy kota to gourmet boerewors rolls – this is a five-star experience in every bite.</p>
-      <button>Order Now</button>
+    <section class="hero">
+      <!-- Single hero section -->
+      <h1>Welcome to Kwa Malume Nico</h1>
+      <p>Kasi Food. Luxurious Flavour. Unforgettable Experience.</p>
+      <a href="menu.html" class="btn">See Our Menu</a>
+    </section>
+    <section id="menu" class="menu">
+      <!-- Menu section -->
+      <h2>Our Signature Dishes</h2>
+      <div class="menu-items">
+        <!-- Fill in with real images and dishes -->
+      </div>
+    </section>
+    <section id="about" class="about">
+      <!-- About section -->
+      <h2>About Kwa Malume Nico</h2>
+      <p>Kwa Malume Nico is more than a food brand...</p>
+    </section>
+    <section class="gallery">
+      <!-- Gallery section -->
+      <h2>Our Kasi Delights</h2>
+      <div class="gallery-images">
+        <!-- Real images with descriptive alt tags -->
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <!-- Single contact section with one form -->
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
     </section>
   </main>
-
   <footer>
     <p>&copy; 2025 Kwa Malume Nico. All rights reserved.</p>
   </footer>
-<!-- Menu Section Starts -->
-<section id="menu" class="menu">
-  <h2>Our Signature Dishes</h2>
-  <div class="menu-items">
-    <div class="menu-item">
-      <img src="https://your-image-link-1.jpg" alt="Dish 1" />
-      <h3>Kasi Deluxe Kota</h3>
-      <p>Stacked with premium meat, fresh veggies & secret sauces</p>
-    </div>
-    <div class="menu-item">
-      <img src="https://your-image-link-2.jpg" alt="Dish 2" />
-      <h3>Spicy Wings Platter</h3>
-      <p>Flame-grilled to perfection, served with our secret dip</p>
-    </div>
-  </div>
-</section>
-
-<!-- About Section Starts -->
-<section id="about" class="about">
-  <h2>About Kwa Malume Nico</h2>
-  <p>
-    Kwa Malume Nico is more than a food brand — it's a kasi luxury movement. 
-    We serve gourmet-grade kotas, spicy wings, and signature sauces crafted to bring rich South African vibes 
-    with world-class taste. Inspired by kasi streets, powered by premium quality.
-  </p>
-  <p>
-    From Tzaneen to the world, we deliver flavor that speaks heritage, hustle, and home.
-  </p>
-</section>
-<!-- About Section Ends -->
-
-<!-- gallery section starts -->
-<section class="gallery">
-  <h2>Our Kasi Delights</h2>
-  <div class="gallery-images">
-    <img src="https://your-link.com/image1.jpg" alt="Kota Deluxe">
-    <img src="https://your-link.com/image2.jpg" alt="Burger Beast">
-    <img src="https://your-link.com/image3.jpg" alt="Signature Plate">
-  </div>
-</section>
-<!-- gallery section ends -->
-
-<!-- contact section starts -->
-<section class="contact">
-  <h2>Place Your Order or Say Hello</h2>
-  <p>We’re just one message away from satisfying your cravings.</p>
-  <form action="mailto:malumenico@example.com" method="post" enctype="text/plain">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" rows="5" placeholder="What would you like to order?"></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-</section>
-<!-- contact section ends -->
-
-<header>
-  <nav class="navbar">
-    <div class="logo">Kwa Malume Nico</div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="menu.html">Menu</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="testimonials.html">Reviews</a></li>
-      <li><a href="events.html">Events</a></li>
-      <li><a href="blog.html">Blog</a></li>
-    </ul>
-  </nav>
-</header>
-
 </body>
-
 </html>
